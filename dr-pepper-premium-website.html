@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173d2b">
+  <meta name="description" content="Dr Pepper supplies dry pepper for homes, food businesses and bulk buyers in Calabar, Nigeria. Contact us for current prices, quantities and availability.">
+  <title>Dr Pepper | Dry Pepper, Bold Flavour</title>
+  <style>
+    :root{--green:#173d2b;--green2:#24583b;--red:#a72e25;--red2:#7e211d;--cream:#fff9f0;--gold:#f1a23a;--ink:#202720;--muted:#687269;--line:#e8e8df;--white:#fff;--shadow:0 20px 55px rgba(23,61,43,.13);--radius:24px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;background:#fffdf9;color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}.container{width:min(1140px,calc(100% - 38px));margin:auto}
+    .announcement{background:var(--green);color:white;font-size:.87rem;padding:9px 0}.announcement .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.announcement a{text-decoration:underline;text-underline-offset:3px}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,253,249,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(23,61,43,.1)}.nav{display:flex;align-items:center;justify-content:space-between;min-height:78px;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:-.05em;font-size:1.35rem;line-height:1.1}.brand-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:16px;background:var(--green);font-size:1.65rem}.brand small{display:block;font-size:.67rem;letter-spacing:.16em;color:var(--muted);margin-top:5px}.navlinks{display:flex;align-items:center;gap:24px;font-size:.94rem;font-weight:700}.navlinks>a:not(.btn):hover{color:var(--red)}.menu{display:none;border:0;border-radius:13px;width:46px;height:46px;background:#f5f1e8;color:var(--green);font-size:1.5rem}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:14px 21px;min-height:49px;border-radius:999px;border:0;font-weight:800;cursor:pointer;transition:transform .18s,background .18s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--green);color:#fff}.primary:hover{background:var(--green2)}.redbtn{background:var(--red);color:white}.goldbtn{background:var(--gold);color:#2a1b09}.outline{background:#fff;color:var(--green);border:1px solid var(--line)}
+    .hero{background:radial-gradient(ellipse at 83% 20%,#f8dfb8 0,transparent 29%),var(--cream);padding:70px 0 78px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:50px}.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;background:#e7efe5;color:var(--green);font-size:.79rem;font-weight:900;letter-spacing:.08em}.hero h1{font-size:clamp(2.8rem,6.4vw,5.3rem);letter-spacing:-.075em;line-height:.99;margin:21px 0}.hero h1 em{font-style:normal;color:var(--red)}.hero-copy{font-size:1.09rem;color:#5d675e;max-width:560px;margin:0 0 27px}.actions{display:flex;gap:12px;flex-wrap:wrap}.trust{display:flex;flex-wrap:wrap;gap:16px 21px;margin-top:27px;color:#4d5a4e;font-size:.88rem;font-weight:700}.trust span:before{content:"✓";display:inline-grid;place-items:center;width:21px;height:21px;border-radius:50%;background:#dfeadd;color:var(--green);margin-right:7px}
+    .hero-photo{min-height:440px;position:relative;display:grid;place-items:center;overflow:hidden;border-radius:34px;background:linear-gradient(145deg,#315f3d,#173d2b);box-shadow:var(--shadow)}.hero-photo:before,.hero-photo:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.2);border-radius:50%}.hero-photo:before{width:340px;height:340px}.hero-photo:after{width:450px;height:450px}.pepper-big{font-size:clamp(9rem,17vw,13rem);filter:drop-shadow(0 22px 15px #08180d66);transform:rotate(-13deg);z-index:1}.photo-caption{position:absolute;z-index:2;bottom:22px;left:22px;right:22px;padding:17px 19px;background:#ffffffef;border-radius:18px;display:flex;align-items:center;justify-content:space-between;gap:12px}.photo-caption strong{display:block;font-size:1.03rem}.photo-caption small{color:var(--muted)}.seal{font-size:1.8rem}
+    section{padding:78px 0}.section-title{text-align:center;max-width:700px;margin:0 auto 38px}.section-title h2{font-size:clamp(2rem,4.5vw,3.25rem);line-height:1.08;letter-spacing:-.055em;margin:13px 0}.section-title p{color:var(--muted);margin:0}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.feature{padding:27px;border:1px solid var(--line);border-radius:var(--radius);background:white}.feature-icon{display:grid;place-items:center;width:54px;height:54px;border-radius:17px;background:#faead6;font-size:1.6rem;margin-bottom:17px}.feature h3{margin:0 0 8px}.feature p{margin:0;color:var(--muted);font-size:.95rem}
+    .products{background:#f5f5ed}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.product{background:white;border:1px solid #e9e9df;border-radius:var(--radius);overflow:hidden;box-shadow:0 9px 28px #173d2b0b}.product-art{height:210px;display:grid;place-items:center;font-size:5.6rem;background:linear-gradient(135deg,#f5dfbf,#fff4e2)}.product:nth-child(2) .product-art{background:linear-gradient(135deg,#edd0b5,#fff0dd)}.product:nth-child(3) .product-art{background:linear-gradient(135deg,#e4e9d2,#f8f8e9)}.product-body{padding:23px}.product h3{margin:0 0 7px;font-size:1.2rem}.product p{margin:0 0 17px;color:var(--muted);font-size:.93rem}.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.tag{font-size:.77rem;font-weight:800;background:#eaf1e7;color:var(--green);padding:6px 10px;border-radius:999px}.textlink{font-size:.9rem;font-weight:850;color:var(--red)}
+    .price-note{margin:25px auto 0;text-align:center;color:var(--muted);font-size:.9rem;max-width:720px}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:52px}.about-art{min-height:360px;border-radius:30px;background:var(--green);display:grid;place-items:center;font-size:8rem;position:relative;overflow:hidden}.about-art:before{content:"";position:absolute;width:290px;height:290px;border:1px solid #ffffff2e;border-radius:50%}.about-art span{z-index:1}.about-art:after{content:"GOOD FOOD STARTS WITH GOOD INGREDIENTS";position:absolute;bottom:22px;left:18px;right:18px;text-align:center;color:#fff;font-size:.72rem;letter-spacing:.13em;font-weight:900}.about-copy h2{font-size:clamp(2rem,4.2vw,3.2rem);line-height:1.08;letter-spacing:-.055em;margin:14px 0}.about-copy p{color:var(--muted)}.checks{list-style:none;padding:0;margin:22px 0 27px;display:grid;gap:10px}.checks li:before{content:"✓";color:var(--green);font-weight:900;margin-right:10px}
+    .cta{padding:0 0 78px}.cta-box{padding:42px;border-radius:30px;background:var(--red);color:white;display:flex;align-items:center;justify-content:space-between;gap:25px}.cta-box h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-.05em;line-height:1.1;margin:0 0 8px}.cta-box p{margin:0;color:#f8dfd9}
+    .contact{background:var(--cream)}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px}.contact-card{background:var(--green);color:white;border-radius:26px;padding:30px}.contact-card h3{font-size:1.6rem;margin:0 0 8px}.contact-card>p{color:#d6e2d7}.contact-row{border-top:1px solid #ffffff2b;padding:15px 0;overflow-wrap:anywhere}.contact-row strong{display:block;text-transform:uppercase;font-size:.75rem;letter-spacing:.1em;color:#c7d8c9;margin-bottom:4px}.contact-row a{text-decoration:underline;text-underline-offset:3px}.form-card{background:white;border:1px solid var(--line);border-radius:26px;padding:30px}.form-card h3{font-size:1.55rem;margin:0 0 6px}.form-card>p{color:var(--muted);margin-top:0}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{margin-bottom:14px}.field label{display:block;font-weight:800;font-size:.89rem;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;border:1px solid #dce1d7;border-radius:12px;padding:13px 14px;background:#fffefa;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green2);box-shadow:0 0 0 3px #24583b1a}.field textarea{min-height:115px;resize:vertical}.span2{grid-column:1/-1}.fineprint{font-size:.79rem!important;color:var(--muted);margin:10px 0 0!important}
+    footer{background:#102b1e;color:white;padding:30px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footer-inner p{color:#c4d0c5;margin:6px 0 0;font-size:.86rem}.footer-links{display:flex;gap:17px;flex-wrap:wrap;font-size:.9rem;color:#e3ece3}.float-wa{position:fixed;z-index:40;right:18px;bottom:18px;width:59px;height:59px;display:grid;place-items:center;background:#20bd5a;color:white;border:3px solid white;border-radius:50%;font-size:1.65rem;box-shadow:0 8px 24px #0003}
+    @media(max-width:850px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:52px 0 60px}.hero-photo{min-height:350px}.features,.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about-art{min-height:290px}.cta-box{align-items:flex-start;flex-direction:column}}
+    @media(max-width:620px){.container{width:calc(100% - 30px)}.announcement .container{justify-content:center;text-align:center}.nav{min-height:70px}.menu{display:block}.navlinks{display:none;position:absolute;top:70px;left:0;right:0;background:#fffdf9;padding:16px 22px 22px;border-bottom:1px solid var(--line);align-items:stretch;flex-direction:column;gap:0}.navlinks.open{display:flex}.navlinks>a:not(.btn){padding:12px 0}.navlinks .btn{margin-top:10px}.hero{padding:40px 0 50px}.hero h1{font-size:clamp(2.7rem,13vw,4rem)}.hero-copy{font-size:1rem}.hero-photo{min-height:290px}.pepper-big{font-size:7.5rem}.hero-photo:before{width:250px;height:250px}.hero-photo:after{width:330px;height:330px}section{padding:58px 0}.features,.product-grid{grid-template-columns:1fr}.product-art{height:175px}.feature{padding:23px}.cta{padding-bottom:58px}.cta-box{padding:28px 23px}.contact-card,.form-card{padding:23px}.formgrid{grid-template-columns:1fr}.span2{grid-column:auto}.footer-inner{align-items:flex-start;flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="announcement"><div class="container"><span>🌶️ Dry pepper for your kitchen and business</span><span>Call us: <a href="tel:+2348165688065">0816 568 8065</a></span></div></div>
+  <header>
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="#home"><span class="brand-icon">🌶️</span><span>Dr Pepper<small>DRY PEPPER STORE</small></span></a>
+      <button class="menu" id="menuButton" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="navlinks" id="navLinks">
+        <a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a>
+        <a class="btn primary" href="https://wa.me/2348165688065?text=Hello%20Dr%20Pepper%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">Order on WhatsApp ↗</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home"><div class="container hero-grid">
+      <div><span class="pill">🌿 FLAVOUR FOR EVERY KITCHEN</span>
+        <h1>Good food deserves <em>bold flavour.</em></h1>
+        <p class="hero-copy">Welcome to Dr Pepper, your dry pepper business in Calabar, Nigeria. Contact us to ask about available products, quantities, and current prices for your kitchen or business.</p>
+        <div class="actions"><a class="btn primary" href="https://wa.me/2348165688065?text=Hello%20Dr%20Pepper%2C%20please%20share%20your%20dry%20pepper%20products%20and%20prices." target="_blank" rel="noopener">🌶️ Ask for Prices</a><a class="btn outline" href="#products">Explore Products ↓</a></div>
+        <div class="trust"><span>Direct customer service</span><span>Calabar-based business</span><span>Easy WhatsApp enquiries</span></div>
+      </div>
+      <div class="hero-photo" role="img" aria-label="Decorative pepper illustration"><div class="pepper-big" aria-hidden="true">🌶️</div><div class="photo-caption"><div><strong>Dr Pepper</strong><small>Bringing flavour to everyday cooking</small></div><span class="seal">✨</span></div></div>
+    </div></section>
+
+    <section><div class="container"><div class="section-title"><span class="pill">WHY SHOP WITH US?</span><h2>A simple way to find your pepper.</h2><p>We make it easy to ask questions and speak directly with our business before ordering.</p></div>
+      <div class="features">
+        <article class="feature"><div class="feature-icon">🌶️</div><h3>Everyday Cooking</h3><p>Ask about dry pepper options for soups, stews, sauces, and other favourite recipes.</p></article>
+        <article class="feature"><div class="feature-icon">🤝</div><h3>Direct Enquiries</h3><p>Message us to discuss available varieties, quantities, prices, and order details.</p></article>
+        <article class="feature"><div class="feature-icon">📍</div><h3>Located in Calabar</h3><p>We are based at No. 04 Asari Ntan Inim, Calabar, Nigeria.</p></article>
+      </div></div></section>
+
+    <section class="products" id="products"><div class="container"><div class="section-title"><span class="pill">OUR PRODUCTS</span><h2>Explore our dry pepper options.</h2><p>Choose a category and message us for current availability and pricing.</p></div>
+      <div class="product-grid">
+        <article class="product"><div class="product-art" aria-hidden="true">🌶️</div><div class="product-body"><h3>Whole Dry Pepper</h3><p>For customers who prefer whole dried pepper for their cooking and preparation.</p><div class="product-bottom"><span class="tag">Price on enquiry</span><a class="textlink" href="https://wa.me/2348165688065?text=Hello%20Dr%20Pepper%2C%20what%20is%20the%20current%20price%20of%20whole%20dry%20pepper%3F" target="_blank" rel="noopener">Ask price ↗</a></div></div></article>
+        <article class="product"><div class="product-art" aria-hidden="true">🫙</div><div class="product-body"><h3>Packaged Dry Pepper</h3><p>Ask us about available pack sizes and packaging options for your needs.</p><div class="product-bottom"><span class="tag">Pack sizes on enquiry</span><a class="textlink" href="https://wa.me/2348165688065?text=Hello%20Dr%20Pepper%2C%20what%20pack%20sizes%20of%20dry%20pepper%20are%20available%3F" target="_blank" rel="noopener">Ask details ↗</a></div></div></article>
+        <article class="product"><div class="product-art" aria-hidden="true">🧺</div><div class="product-body"><h3>Bulk Orders</h3><p>For restaurants, food sellers, and other buyers asking about larger quantities.</p><div class="product-bottom"><span class="tag">Bulk enquiries</span><a class="textlink" href="https://wa.me/2348165688065?text=Hello%20Dr%20Pepper%2C%20I%20want%20to%20ask%20about%20bulk%20dry%20pepper%20orders." target="_blank" rel="noopener">Ask details ↗</a></div></div></article>
+      </div><p class="price-note">Prices and stock are not listed because they have not yet been provided. Add your confirmed prices, weights, and product photos before publishing a final catalogue.</p>
+    </div></section>
+
+    <section id="about"><div class="container about-grid"><div class="about-art" aria-hidden="true"><span>🌶️</span></div><div class="about-copy"><span class="pill">ABOUT DR PEPPER</span><h2>Local service. Bold flavour. Easy ordering.</h2>
+      <p>Dr Pepper is a dry pepper business located at No. 04 Asari Ntan Inim, Calabar, Nigeria. Our goal is to help customers enquire about dry pepper products and connect with us easily.</p>
+      <p>Whether you are shopping for home cooking or need to discuss a larger quantity for your business, contact us for current availability, prices, and order arrangements.</p>
+      <ul class="checks"><li>Easy phone and WhatsApp contact</li><li>Product and quantity enquiries</li><li>Local business address in Calabar</li></ul>
+      <a class="btn primary" href="#contact">Contact Our Business →</a>
+    </div></div></section>
+
+    <div class="cta"><div class="container"><div class="cta-box"><div><h2>Need today's price?</h2><p>Send Dr Pepper a WhatsApp message to ask about products, quantities, and availability.</p></div><a class="btn goldbtn" href="https://wa.me/2348165688065?text=Hello%20Dr%20Pepper%2C%20please%20send%20me%20your%20current%20dry%20pepper%20prices." target="_blank" rel="noopener">Get Prices on WhatsApp ↗</a></div></div></div>
+
+    <section class="contact" id="contact"><div class="container"><div class="section-title"><span class="pill">CONTACT US</span><h2>Let’s talk pepper.</h2><p>Call, email, or send your enquiry to us on WhatsApp.</p></div>
+      <div class="contact-grid"><div class="contact-card"><h3>Dr Pepper</h3><p>Dry Pepper Store · Calabar, Nigeria</p>
+        <div class="contact-row"><strong>Phone / WhatsApp</strong><a href="tel:+2348165688065">08165688065</a><br><a href="https://wa.me/2348165688065" target="_blank" rel="noopener">Chat on WhatsApp ↗</a></div>
+        <div class="contact-row"><strong>Email</strong><a href="mailto:endurancemike@gmail.com">endurancemike@gmail.com</a></div>
+        <div class="contact-row"><strong>Address</strong><span>No. 04 Asari Ntan Inim, Calabar, Nigeria</span></div>
+      </div>
+      <form class="form-card" id="orderForm"><h3>Send an order enquiry</h3><p>Complete the form and continue to WhatsApp to send your message.</p>
+        <div class="formgrid">
+          <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" placeholder="Enter your name" required></div>
+          <div class="field"><label for="phone">Your phone (optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Your phone number"></div>
+          <div class="field span2"><label for="product">Product</label><select id="product" name="product"><option>Whole dry pepper</option><option>Packaged dry pepper</option><option>Bulk order</option><option>General enquiry</option></select></div>
+          <div class="field"><label for="quantity">Quantity (optional)</label><input id="quantity" name="quantity" placeholder="e.g. 2 bags or 1 pack"></div>
+          <div class="field"><label for="budget">Budget (optional)</label><input id="budget" name="budget" placeholder="e.g. ₦10,000"></div>
+          <div class="field span2"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us what you need..." required></textarea></div>
+          <div class="field span2"><button class="btn primary" type="submit">Continue to WhatsApp ↗</button></div>
+        </div>
+        <p class="fineprint">This form prepares a WhatsApp message; it does not take payment or save your information on the website.</p>
+      </form></div>
+    </div></section>
+  </main>
+  <footer><div class="container footer-inner"><div><a class="brand" href="#home"><span class="brand-icon">🌶️</span><span>Dr Pepper<small style="color:#c4d0c5">DRY PEPPER STORE</small></span></a><p>Dry pepper enquiries in Calabar, Nigeria.</p></div><div class="footer-links"><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></div><p>© <span id="year"></span> Dr Pepper. All rights reserved.</p></div></footer>
+  <a class="float-wa" href="https://wa.me/2348165688065?text=Hello%20Dr%20Pepper%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="WhatsApp Dr Pepper">✆</a>
+  <script>
+    const menuButton=document.getElementById('menuButton');
+    const navLinks=document.getElementById('navLinks');
+    menuButton.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close menu':'Open menu');menuButton.textContent=open?'×':'☰';});
+    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Open menu');menuButton.textContent='☰';}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    document.getElementById('orderForm').addEventListener('submit',event=>{
+      event.preventDefault();
+      const val=id=>document.getElementById(id).value.trim();
+      const message=['Hello Dr Pepper, I would like to make an order enquiry.','Name: '+val('name'),val('phone')?'Phone: '+val('phone'):'','Product: '+val('product'),val('quantity')?'Quantity: '+val('quantity'):'',val('budget')?'Budget: '+val('budget'):'','Message: '+val('message')].filter(Boolean).join('\n');
+      window.open('https://wa.me/2348165688065?text='+encodeURIComponent(message),'_blank','noopener,noreferrer');
+    });
+  </script>
+</body>
+</html>
